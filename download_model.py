@@ -38,7 +38,7 @@ def check_env_vars() -> None:
 def main() -> None:
     check_env_vars()
     version = open(MODEL_VERSION_FILE).read().strip()
-    model_uri = f"models:/{MODEL_NAME}/{version}"
+    model_uri = f"models:/{MODEL_NAME}@champion"
     logger.info(f"Downloading model from: {model_uri}")
 
     model = mlflow.sklearn.load_model(model_uri)

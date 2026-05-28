@@ -6,8 +6,8 @@ from pathlib import Path
 
 import pandas as pd
 
-INPUT_DIR = Path("data")
-OUTPUT_FILE = Path("data/taxi-rides-training-data.parquet")
+INPUT_DIR = Path("example-data/data")
+OUTPUT_FILE = Path("example-data/data/taxi-rides-training-data.parquet")
 OVERWRITE = True
 
 
